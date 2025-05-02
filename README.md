@@ -1,12 +1,50 @@
-# React + Vite
+Pokémon Explorer is a React-based single-page application (SPA) that allows users to explore, search, sort, and compare Pokémon using data from the PokeAPI. It includes interactive features such as detailed views, filtering, pagination, favorites, and comparisons.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔍 Features
+Pokémon List View
 
-Currently, two official plugins are available:
+Displays first 151 Pokémon
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Sorting (ID & Name), Filtering by Type
 
-## Expanding the ESLint configuration
+Pagination and adjustable items per page
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Detailed Pokémon View
+
+Shows stats, abilities, moves, and evolution chain
+
+Dynamically fetched via route (/pokemon/:id)
+
+Favorites
+
+Add/remove Pokémon as favorites (stored in localStorage)
+
+View them via the "⭐ View Favorites" link
+
+Comparison Tool
+
+Select multiple Pokémon to compare their base stats in a side-by-side table
+
+Random Pokémon Button
+
+Jump to a random Pokémon's detail page
+
+Performance & Error Handling
+
+Optimized with useMemo and useCallback
+
+Error boundaries catch unexpected rendering issues
+
+🛠️ Technologies Used
+React
+
+React Router
+
+Context API
+
+Custom Hooks
+
+Local Storage
+
+Fetch API / PokeAPI
+
